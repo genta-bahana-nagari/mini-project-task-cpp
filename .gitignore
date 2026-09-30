@@ -1,0 +1,69 @@
+# =========================
+# C++ build artifacts
+# =========================
+
+# Windows executables
+*.exe
+
+# Linux/macOS executables
+*.out
+
+# Object files
+*.o
+*.obj
+
+# Static libraries
+*.a
+*.lib
+
+# Dynamic libraries
+*.so
+*.dll
+*.dylib
+
+
+# =========================
+# Build directories
+# =========================
+
+build/
+bin/
+
+
+# =========================
+# IDE / Editor
+# =========================
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# JetBrains
+.idea/
+
+
+# =========================
+# OS generated files
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+
+# =========================
+# CMake
+# =========================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
