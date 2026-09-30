@@ -40,7 +40,7 @@ void mulaiGame() {
 
     /* Line dibawah ini hanya untuk menguji
     angka random yang dibuat oleh program */
-    
+
     // cout << "Test dulu, angka random: " << angkaRahasia << endl;
     
     cout << "Kamu memiliki maksimal "
@@ -152,11 +152,11 @@ int main() {
     // untuk menghasilkan angka acak
     srand(time(0));
 
-    char pilihan;
+    char pilihan = 'Y';
 
     // Permainan akan terus diulang
     // selama pemain memilih Y/y
-    do {
+    while (pilihan == 'Y') {
 
         mulaiGame();
 
@@ -168,7 +168,7 @@ int main() {
 
         cin >> pilihan;
 
-    } while (pilihan == 'Y' || pilihan == 'y');
+    } ;
 
 
     cout << "\n=================================" << endl;
