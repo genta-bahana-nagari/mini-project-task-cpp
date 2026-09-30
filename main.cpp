@@ -17,6 +17,43 @@ void tampilkanRiwayat(int riwayat[], int jumlahPercobaan) {
     }
 }
 
+bool compare(int tebakan, int angkaRahasia, int percobaan) {
+
+    if (tebakan == angkaRahasia) {
+
+        cout << "\n=================================" << endl;
+        cout << "       SELAMAT! BENAR!           " << endl;
+        cout << "=================================" << endl;
+
+        cout << "Angka rahasia: "
+             << angkaRahasia << endl;
+
+        cout << "Kamu berhasil menebak dalam "
+             << percobaan
+             << " percobaan." << endl;
+
+        return true;
+    }
+
+    else if (tebakan < angkaRahasia) {
+        cout << "Petunjuk: Tebakan terlalu kecil!" << endl;
+    }
+    else {
+        cout << "Petunjuk: Tebakan terlalu besar!" << endl;
+    }
+
+    int sisaPercobaan =
+        MAKSIMAL_PERCOBAAN - percobaan;
+
+    if (sisaPercobaan > 0) {
+        cout << "Sisa percobaan: "
+             << sisaPercobaan
+             << endl;
+    }
+
+    return false;
+}
+
 // Fungsi utama untuk menjalankan satu permainan
 void mulaiGame() {
 
@@ -76,45 +113,10 @@ void mulaiGame() {
         percobaan++;
 
         // Membandingkan tebakan dengan angka rahasia
-        if (tebakan == angkaRahasia) {
+        compare(tebakan, angkaRahasia, percobaan);
 
-            cout << "\n=================================" << endl;
-            cout << "       SELAMAT! BENAR!           " << endl;
-            cout << "=================================" << endl;
-
-            cout << "Angka rahasia: "
-                 << angkaRahasia << endl;
-
-            cout << "Kamu berhasil menebak dalam "
-                 << percobaan
-                 << " percobaan." << endl;
-
-            menang = true;
-
-            // Menghentikan perulangan
+        if (menang) {
             break;
-        }
-
-        // Memberikan petunjuk
-        else if (tebakan < angkaRahasia) {
-
-            cout << "Petunjuk: Tebakan terlalu kecil!" << endl;
-
-        }
-        else {
-
-            cout << "Petunjuk: Tebakan terlalu besar!" << endl;
-        }
-
-        // Memberikan informasi sisa percobaan
-        int sisaPercobaan =
-            MAKSIMAL_PERCOBAAN - percobaan;
-
-        if (sisaPercobaan > 0) {
-
-            cout << "Sisa percobaan: "
-                 << sisaPercobaan
-                 << endl;
         }
     }
 
