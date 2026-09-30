@@ -24,7 +24,7 @@ g++ main.cpp -o tebak-angka.out
 ```
 Windows:
 ```bash
-g++ main.cpp -o tebak-angka.out
+g++ main.cpp -o tebak-angka.exe
 ```
 
 ### Jalankan
