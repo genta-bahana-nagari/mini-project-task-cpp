@@ -1,6 +1,7 @@
 # Number Guessing Game
 
 🇮🇩 Pilih bahasa README yang ingin dibaca:
+<br>
 🇬🇧 Choose README language to read:
 
 * [🇮🇩 Bahasa Indonesia](README_ID.md)
